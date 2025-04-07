@@ -14,7 +14,7 @@ void swap(int* a, int* b) {
 void sort(int arr[], int start, int end) {
     if (start >= end) return;
 
-    int pivot = arr[start];
+    int pivot = arr[(start+end)/2];
     int left = start + 1;
     int right = end;
 
