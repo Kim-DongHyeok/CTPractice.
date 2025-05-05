@@ -17,11 +17,14 @@ int main() {
         else if (str[i] == ')') {
             s.pop();
         }
+        else if (s.empty() == true && str[i] == ')') {
+            cout << "No";
+            return 0;
+        }
     }
 
     if (s.empty() == false) cout << "No";
-    else if (s.empty() == true) cout << "Yes";
+    else cout << "Yes";
 
-    
-    
+    return 0;
 }
