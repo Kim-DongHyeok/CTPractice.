@@ -14,12 +14,12 @@ int main() {
         if (str[i] == '(') {
             s.push('(');
         }
-        else if (str[i] == ')') {
-            s.pop();
-        }
         else if (s.empty() == true && str[i] == ')') {
             cout << "No";
             return 0;
+        }
+        else if (str[i] == ')') {
+            s.pop();
         }
     }
 
